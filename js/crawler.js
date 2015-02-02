@@ -13,7 +13,7 @@ function requestCrawler(page)
         	if (!obj.success) {
         		var nextPage = parseInt(obj.page) + 1;
 	      		console.log('Crawler success: ' + obj.page);
-	        	setTimeout(requestCrawler, 30000*5, nextPage);
+	        	setTimeout(requestCrawler, 1000, nextPage);
         	} else {
         		console.log('Crawler successfully!!!');
         	}
