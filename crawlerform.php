@@ -12,10 +12,10 @@ if(!empty($_POST['listPhotos'])){
 			$dir = createImageDir(md5(uniqid(32)), 'downdload');
 			downloadMultipleFiles($photos, $dir);
 		}else{
-			throw new("Invalid request!!");
+			throw new Execption("Invalid request!!");
 		}
 	}else{
-		throw new("Photo invalid");
+		throw new Execption("Photo invalid");
 	}
 }else{
 	throw new Exception('Photo empty!!!');
