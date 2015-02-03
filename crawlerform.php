@@ -3,7 +3,7 @@
 require_once(dirname(__FILE__).'/libs/vendor/autoload.php');
 require_once(dirname(__FILE__).'/libs/Inflector.php');
 require_once(dirname(__FILE__).'/libs/simpleHtmlDom.php');
-require_once(dirname()__FILE__).'functions.php';
+require_once(dirname(__FILE__).'/functions.php');
 
 <?php
 
