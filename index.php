@@ -7,6 +7,5 @@
 	<script src="./js/crawler.js"></script>
 </head>
 <body>
-	
 </body>
 </html>
