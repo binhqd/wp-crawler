@@ -9,8 +9,10 @@ if(!empty($_POST['listPhotos'])){
 	if(!empty($_POST['listPhotos'])){
 		$photos = explode(',',$_POST['listPhotos']);
 		if (!empty($photos)) {
-			$dir = createImageDir(md5(uniqid(32)), 'downdload');
+			$dir = createImageDir(md5(uniqid(32)), 'download');
 			downloadMultipleFiles($photos, $dir);
+
+			exit('Done');
 		}else{
 			throw new Execption("Invalid request!!");
 		}
