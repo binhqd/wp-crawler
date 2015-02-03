@@ -5,8 +5,6 @@ require_once(dirname(__FILE__).'/libs/Inflector.php');
 require_once(dirname(__FILE__).'/libs/simpleHtmlDom.php');
 require_once(dirname(__FILE__).'/functions.php');
 
-<?php
-
 if(!empty($_POST['listPhotos'])){
 	if(!empty($_POST['listPhotos'])){
 		$photos = explode(',',$_POST['listPhotos']);
